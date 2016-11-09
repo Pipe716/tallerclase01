@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+.logo {
+         color: black;  
+         font-family: Helvetica;   
+         font-weight:bold;   
+}
+
+.subtitulos{
+
+        color:blue;
+        font-family: lucida Haettenschweiler;
+        font-weight:bold;
+        font-size: 200%;
+}
+
+.titulosTabla{
+
+        color: sienna;
+        font-family: Helvetica;   
+        font-weight:bold;
+        font-size: 100%;
+       
+}
+
+.contenidoTabla{
+
+        color:black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+        font-size: 100%;
+
+}
+
+.parrafo{
+
+        color:grey;
+        font-family: comic;
+        font-weight:bold;
+        font-size: 150%;
+
+}
+
+.diasSemana{
+
+        color:black;
+        font-family: comic;
+        font-weight:bold;
+        font-size: 150%;
+
+}
