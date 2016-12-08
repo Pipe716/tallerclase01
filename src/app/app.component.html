@@ -1,260 +1,46 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
  <nav>
     <div class="nav-wrapper">
       <a href="" class="brand-logo right"><span class= "logo">CONSULTAS ESPECIALISTAS</span></a>
       <ul class="left hide-on-med-and-down">
-        <li><a href=""><span class= "subtitulos">Consultas</span></a></li>
-        <li><a href=""><span class= "subtitulos">Medicos</span></a></li>
         <li class="active"><a href="collapsible.html"><span class= "subtitulos">Atencion al Cliente</span></a></li>
       </ul>
     </div>
   </nav>
- 
-  <div class="row">
-  
-    <form class="col s12 m4 l12">
-      <div class="input-field col l4">
 
- 
-
-       <table class=”striped”>
-
-       <thead>
-
-<tr>
-
-               <th data-field=”name”><span class= "titulosTabla">MEDICO</span></th>
-
-               <th data-field=”especialice”><span class= "titulosTabla">ESPECIALIDAD</span></th>
-
-               <th data-field=”consultorio”><span class= "titulosTabla">CONSULTORIO</span></th>
-
-               <th data-field=”jornada”><span class= "titulosTabla">ATENCION</span></th>
-
-</tr>
-
-      </thead>
-
-      <tbody>
-
-           <tr>
-
-                <td><span class= "contenidoTabla">Jorge Alberto Franco</span></td>
-
-                <td><span class= "contenidoTabla">Neurologo</span></td>
-
-                <td><span class= "contenidoTabla">D-400</span></td>
-
-                <td><span class= "contenidoTabla">Mañana</span></td>
-
-          </tr>
-
-           <tr>
-
-                 <td><span class= "contenidoTabla">Carolina Molina Alvarez</span></td>
-
-                 <td><span class= "contenidoTabla">Pediatra</span></td>
-
-                 <td><span class= "contenidoTabla">D-401</span></td>
-
-                 <td><span class= "contenidoTabla">Tarde</span></td>
-             
-
-          </tr>
-
-          <tr>
-
-               
-                <td><span class= "contenidoTabla">Jenny Maria Buitrago Cano</span></td>
-
-                <td><span class= "contenidoTabla">Nutricionista</span></td>
-
-                <td><span class= "contenidoTabla">D-402</span></td>
-
-                <td><span class= "contenidoTabla">Mañana</span></td>
-
-          </tr>
-
-          <tr>
-
-               
-                <td><span class= "contenidoTabla">Pedro Antonio Arias Marin</span></td>
-
-                <td><span class= "contenidoTabla">Cardíologo</span></td>
-
-                <td><span class= "contenidoTabla">D-403</span></td>
-
-                <td><span class= "contenidoTabla">Mañana</span></td>
-
-          </tr>
-
-            <tr>
-
-               
-                <td><span class= "contenidoTabla">Simón cárdenas Valencia</span></td>
-
-                <td><span class= "contenidoTabla">Ortopedista</span></td>
-
-                <td><span class= "contenidoTabla">D-404</span></td>
-
-                <td><span class= "contenidoTabla">Tarde</span></td>
-
-           </tr>
-
-            <tr>
-
-               
-                <td><span class= "contenidoTabla">Adriana Lucia Maldonado Arias</span></td>
-
-                <td><span class= "contenidoTabla">Fonoaudiologa</span></td>
-
-                <td><span class= "contenidoTabla">D-404</span></td>
-
-                <td><span class= "contenidoTabla">Mañana</span></td>
-
-           </tr>
-
-
-            <tr>
-
-               
-                <td><span class= "contenidoTabla">Jairo Cárdenas Munoz</span></td>
-
-                <td><span class= "contenidoTabla">Oftalmologo</span></td>
-
-                <td><span class= "contenidoTabla">D-405</span></td>
-
-                <td><span class= "contenidoTabla">Mañana</span></td>
-
-           </tr>
-
-            <tr>
-
-               
-                <td><span class= "contenidoTabla">Jamez Arturo Pelaez Gomez</span></td>
-
-                <td><span class= "contenidoTabla">Nefrologo</span></td>
-
-                <td><span class= "contenidoTabla">D-405</span></td>
-
-                <td><span class= "contenidoTabla">Tarde</span></td>
-
-           </tr>
-            
-      </tbody>
-
-    </table>
-
-    </div>
-
+  <nav class="nav-extended">
+    <div class="nav-wrapper">
+      <a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
     
-      <div class="col s12 m4 l4">
-     
-          <div class="card">
-            <div class="card-image">
-                  <img src="assets/imagenes/logo.gif">
-                  <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-                <p><span class= "parrafo">EN LA TABLA DE LA IZQUIERDA ASIGNE EL ESPECILISTA QUE REQUIERA  
-                EL PACIENTE Y AGENDE LA CITA EN LA JORNADA QUE ATIENDA EL MEDICO. POR FAVOR EN EL 
-                 FORMULARIO DE LA DERECHA LLENAR LOS DATOS CORRESPONDIENTES.</span></p>
-            </div>     
-          </div>  
-        </div>  
-
-
- 
-      <div class="col s12 m4 l4">
-          <div class="input-field col s6">
-             
-              <input id="nombre" type="text" class="validate">
-              <label for="nombre"><span class= "titulosTabla">NOMBRE PACIENTE</span></label>
-          </div>
-      </div>    
-
-      <div class="col s12 m4 l4">
-          <div class="input-field col s6">
-              <input id="apellidos" type="text" class="validate">
-              <label for="apellidos"><span class= "titulosTabla">APELLIDOS PACIENTE</span></label>
-          </div>
-      </div>
- 
-     <div class="col s12 m4 l4">
-          <div class="input-field col s6">
-              <input id="telefono" type="tel" class="validate">
-              <label for="telefono"><span class= "titulosTabla">TELEFONO</span></label>
-          </div>
-     </div>
-
-
-     <div class="col s12 m4 l4">
-          <div class="input-field col s6">
-              <input id="medico" type="text" class="validate">
-              <label for="medico"><span class= "titulosTabla">NOMBRE MEDICO</span></label>
-          </div>
+      <ul class="tabs tabs-transparent">
+        <li class="tab" (click)="listarCitas()"><a href="#test1">Consultar Citas</a></li>
+        <li class="tab"><a class="active" href="#test2"></a></li>
+      </ul>
     </div>
+  </nav>
+  <div id="listaCitas" class="col s12">
+    
+        <ul class="collection"  *ngFor="let clinicas of citasList">
+          <li class="collection-item avatar">
+            <img src="assets/imagenes/cita.jpg" alt="" class="circle">
+            <span class="title">Nombre Paciente: {{clinicas.nombre}} {{clinicas.apellidos}} </span>
+            <p>Medico: {{clinicas.medico}}  <br>
+             Dia de cita: {{clinicas.diassemana}}<br>
+             Hora de cita: {{clinicas.hora}}
+            </p>
+            <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+          </li>
+        </ul>
+
+  </div>
+
+  <div id="test2" class="col s12"></div>
 
 
-    <div class="col s12 m4 l4">
-          <div class="input-field col s6">
-                  <p><span class= "titulosTabla">DIA DE CONSULTA</span></p>
-                <p>
-                  <input class="with-gap" name="group1" type="radio" id="test1" />
-                  <label for="test1"><span class= "diasSemana">LUNES</span></label>
-                </p>
-                <p>
-                  <input class="with-gap" name="group1" type="radio" id="test2" />
-                  <label for="test2"><span class= "diasSemana">MARTES</span></label>
-                </p>
-                <p>
-                  <input class="with-gap" name="group1" type="radio" id="test3"  />
-                  <label for="test3"><span class= "diasSemana">MIERCOLES</span></label>
-                </p>
-                 <p>
-                    <input class="with-gap" name="group1" type="radio" id="test4"  />
-                    <label for="test4"><span class= "diasSemana">JUEVES</span></label>
-                </p>
-                
-                 <p>
-                    <input class="with-gap" name="group1" type="radio" id="test5"  />
-                    <label for="test5"><span class= "diasSemana">VIERNES</span></label>
-                </p>
 
-                 <p>
-                    <input class="with-gap" name="group1" type="radio" id="test6"  />
-                    <label for="test6"><span class= "diasSemana">SABADO</span></label>
-                </p>
-         </div> 
-  
-      </div>
-              <br>
-
-        <div class="col s12 m4 l4">
-          <div class="input-field col s12">
-               <p><span class= "titulosTabla">HORA ASIGNADA PARA LA CITA</span></p>
-              <input id="hora" type="time" class="validate">
-              <label for="hora"></label>
-          </div>
-       </div>
-         
-       <div class="col s4">
-          <br/>
-          <button class="btn waves-effect waves-light" 
-                  type="submit" 
-                  name="action">
-                  GUARDAR
-                  <i class="material-icons right"></i>            
-          </button>
-        </div>  
-      
-    </form>  
-   
-
-  </div>    
-        
-   
-
-
- 
+  <div class="col s12 m8 l10"> <!-- Note that "m8 l9" was added -->
+      <historias-clinicas-electiva>
+      </historias-clinicas-electiva>
+  </div>
       
   

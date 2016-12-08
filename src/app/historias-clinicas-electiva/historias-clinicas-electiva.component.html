@@ -1,0 +1,291 @@
+
+  <div class="row">
+  
+    <form class="col s12 m4 l12" #formCitas="ngForm" novalidate>
+      <div class="input-field col l4">
+
+ 
+
+       <table class=”striped”>
+
+       <thead>
+
+<tr>
+
+               <th data-field=”name”><span class= "titulosTabla">MEDICO</span></th>
+
+               <th data-field=”especialice”><span class= "titulosTabla">ESPECIALIDAD</span></th>
+
+               <th data-field=”consultorio”><span class= "titulosTabla">CONSULTORIO</span></th>
+
+               <th data-field=”jornada”><span class= "titulosTabla">ATENCION</span></th>
+
+</tr>
+
+      </thead>
+
+      <tbody>
+
+           <tr>
+
+                <td><span class= "contenidoTabla">Jorge Alberto Franco</span></td>
+
+                <td><span class= "contenidoTabla">Neurologo</span></td>
+
+                <td><span class= "contenidoTabla">D-400</span></td>
+
+                <td><span class= "contenidoTabla">Mañana</span></td>
+
+          </tr>
+
+           <tr>
+
+                 <td><span class= "contenidoTabla">Carolina Molina Alvarez</span></td>
+
+                 <td><span class= "contenidoTabla">Pediatra</span></td>
+
+                 <td><span class= "contenidoTabla">D-401</span></td>
+
+                 <td><span class= "contenidoTabla">Tarde</span></td>
+             
+
+          </tr>
+
+          <tr>
+
+               
+                <td><span class= "contenidoTabla">Jenny Maria Buitrago Cano</span></td>
+
+                <td><span class= "contenidoTabla">Nutricionista</span></td>
+
+                <td><span class= "contenidoTabla">D-402</span></td>
+
+                <td><span class= "contenidoTabla">Mañana</span></td>
+
+          </tr>
+
+          <tr>
+
+               
+                <td><span class= "contenidoTabla">Pedro Antonio Arias Marin</span></td>
+
+                <td><span class= "contenidoTabla">Cardíologo</span></td>
+
+                <td><span class= "contenidoTabla">D-403</span></td>
+
+                <td><span class= "contenidoTabla">Mañana</span></td>
+
+          </tr>
+
+            <tr>
+
+               
+                <td><span class= "contenidoTabla">Simón cárdenas Valencia</span></td>
+
+                <td><span class= "contenidoTabla">Ortopedista</span></td>
+
+                <td><span class= "contenidoTabla">D-404</span></td>
+
+                <td><span class= "contenidoTabla">Tarde</span></td>
+
+           </tr>
+
+            <tr>
+
+               
+                <td><span class= "contenidoTabla">Adriana Lucia Maldonado Arias</span></td>
+
+                <td><span class= "contenidoTabla">Fonoaudiologa</span></td>
+
+                <td><span class= "contenidoTabla">D-404</span></td>
+
+                <td><span class= "contenidoTabla">Mañana</span></td>
+
+           </tr>
+
+
+            <tr>
+
+               
+                <td><span class= "contenidoTabla">Jairo Cárdenas Munoz</span></td>
+
+                <td><span class= "contenidoTabla">Oftalmologo</span></td>
+
+                <td><span class= "contenidoTabla">D-405</span></td>
+
+                <td><span class= "contenidoTabla">Mañana</span></td>
+
+           </tr>
+
+            <tr>
+
+               
+                <td><span class= "contenidoTabla">Jamez Arturo Pelaez Gomez</span></td>
+
+                <td><span class= "contenidoTabla">Nefrologo</span></td>
+
+                <td><span class= "contenidoTabla">D-405</span></td>
+
+                <td><span class= "contenidoTabla">Tarde</span></td>
+
+           </tr>
+            
+      </tbody>
+
+    </table>
+
+    </div>
+
+    
+      <div class="col s12 m4 l4">
+     
+          <div class="card">
+            <div class="card-image">
+                  <img src="assets/imagenes/logo.gif">
+                  <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+                <p><span class= "parrafo">EN LA TABLA DE LA IZQUIERDA ASIGNE EL ESPECILISTA QUE REQUIERA  
+                EL PACIENTE Y AGENDE LA CITA EN LA JORNADA QUE ATIENDA EL MEDICO. POR FAVOR EN EL 
+                 FORMULARIO DE LA DERECHA LLENAR LOS DATOS CORRESPONDIENTES.</span></p>
+            </div>     
+          </div>  
+        </div>  
+
+
+ 
+      <div class="col s12 m4 l4">
+          <div class="input-field col s6">
+             
+              <input id="nombre" 
+              type="text" 
+              class="validate"
+              [class.invalid]="!nombreTxt.valid"
+              name="nombre"
+              #nombreTxt="ngModel"
+              [(ngModel)]="citaACrear.nombre"
+              required>
+
+              <label for="nombre"
+              data-error="Campo obligatorio" 
+              data-success="Aceptado">
+              <span class= "titulosTabla">
+              NOMBRE PACIENTE</span>
+              </label>
+          </div>
+      </div>    
+
+      <div class="col s12 m4 l4">
+          <div class="input-field col s6">
+              <input id="apellidos" 
+              type="text" 
+              class="validate"
+              [class.invalid]="!apellidosTxt.valid"
+              name="apellidos"
+              #apellidosTxt="ngModel"
+              [(ngModel)]="citaACrear.apellidos"
+              required>
+
+              <label for="apellidos"
+              data-error="Campo obligatorio" 
+              data-success="Aceptado">
+              <span class= "titulosTabla">
+              APELLIDOS PACIENTE</span></label>
+          </div>
+      </div>
+ 
+     <div class="col s12 m4 l4">
+          <div class="input-field col s6">
+              <input id="telefono" 
+              type="text" 
+              class="validate"
+              [class.invalid]="!telefonoTxt.valid"
+              name="telefono"
+              #telefonoTxt="ngModel"
+              [(ngModel)]="citaACrear.telefono"
+              required>
+
+              <label for="telefono"
+              data-error="Campo obligatorio" 
+              data-success="Aceptado">
+              <span class= "titulosTabla">
+              TELEFONO</span></label>
+          </div>
+     </div>
+<br><br><br>
+
+     <div class="col s12 m4 l4">
+          <div class="input-field col s6">
+              <input id="medico" 
+              type="text" 
+              class="validate"
+              [class.invalid]="!medicoTxt.valid"
+              name="medico"
+              #medicoTxt="ngModel"
+              [(ngModel)]="citaACrear.medico"
+              required>
+
+              <label for="medico">
+              <span class= "titulosTabla">
+              NOMBRE MEDICO</span></label>
+          </div>
+    </div>
+
+
+<div class="col s12 m4 l4">
+  <div class="input-field col s6">
+    <span class= "titulosTabla">
+    <label>DIA DE CONSULTA</label></span>
+    <br><br>
+      <select class="browser-default"
+      id="diassemana"
+      [class.invalid]="!diassemanaTxt.valid"
+      name="diassemana"
+      #diassemanaTxt="ngModel"
+      [(ngModel)]="citaACrear.diassemana"
+      required>
+        <option value="" disabled selected>Seleccione una opcion</option>
+        <option value="LUNES">LUNES</option>
+        <option value="MARTES">MARTES</option>
+        <option value="MIERCOLES">MIERCOLES</option>
+        <option value="JUEVES">JUEVES</option>
+        <option value="VIERNES">VIERNES</option>
+    </select>
+  </div> 
+</div>
+
+<br>
+
+        <div class="col s12 m4 l4">
+          <div class="input-field col s12">
+               <p><span class= "titulosTabla">HORA ASIGNADA PARA LA CITA</span></p>
+              <input id="hora" 
+              type="time" 
+              class="validate"
+              [class.invalid]="!horaTxt.valid"
+              name="hora"
+              #horaTxt="ngModel"
+              [(ngModel)]="citaACrear.hora"
+              required>
+              <label for="hora"></label>
+          </div>
+       </div>
+         
+       <div class="col s4">
+          <br/>
+          <button class="btn waves-effect waves-light" 
+                  type="submit" 
+                  name="action"
+                  [disabled]="!formCitas.valid"
+                  (click)="guardarCita()">
+                  GUARDAR
+                  <i class="material-icons right"></i>            
+          </button>
+        </div>  
+      
+    </form>  
+   
+
+  </div>    
+        
+   
